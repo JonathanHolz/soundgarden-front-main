@@ -12,18 +12,18 @@ async function getEventos() {
     
       const eventos = await response.json();
     
-      notices.articles.forEach((eventos) => {
+      eventos.articles.forEach((eventos) => {
         const cardEventos = `
-        <article class="col-6">
-        <div class="card mb-3">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="${eventos.urlToImage}"
-                class="img-fluid rounded-start"
-                alt="..."
-              />
-            </div>
+        <section id="full" class="full">
+        <div class="container d-flex justify-content-center align-items-center flex-wrap">
+        <article class="evento card p-5 m-3">
+        <h2>eventao- 05/03/2022</h2>
+        <h4>Arctic Monkeys, The Kooks, Hiatus Kaiyote</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
+            dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
+            nobis in inventore tenetur asperiores.</p>
+        <a href="#" class="btn btn-primary">reservar ingresso</a>
+        </article>
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">
@@ -35,7 +35,7 @@ async function getEventos() {
                 <a
                   href=" ${eventos.url}"
                   class="btn btn-primary"
-                  >Ir para noticia</a
+                  >Ir par a noticia</a
                 >
               </div>
             </div>
@@ -47,3 +47,5 @@ async function getEventos() {
         section.innerHTML += cardEventos;
       });
     }
+
+    getEventos();
