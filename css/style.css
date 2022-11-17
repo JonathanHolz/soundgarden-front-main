@@ -48,3 +48,24 @@ footer nav ul{
 footer nav ul li  {
     padding: 10px;
 }
+.modal {
+    text-align: center;
+    background-color: #F8BBD0;
+    padding: 1%;
+    border-radius: 50px;
+    border: #C2185B solid 1px;
+    left: 38%;
+    width: 25%;
+    height: 30%;
+    top: 30%
+}
+.button {
+    cursor: pointer;
+    padding: 2%;
+    margin: 3%;
+    background-color: #C2185B;
+    border-color: #C2185B;
+}
+.modal.visivel {
+    display: block;
+}
