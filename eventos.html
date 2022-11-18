@@ -18,7 +18,7 @@
         </a>
     </header>
     <main>
-        <section class="full">
+        <section id="full" class="full">
             <div class="container text-center">
                 <h2>Todos os Eventos</h2>
             </div>
@@ -29,47 +29,47 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
                         dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
                         nobis in inventore tenetur asperiores.</p>
-                    <a href="#" class="btn btn-primary">reservar ingresso</a>
+                    <input type="button" id="abrirmodal" class="btn btn-primary" value="reservar ingresso" onclick=abrirmodal()>
                 </article>
-                <article class="evento card p-5 m-3">
+                <article id="artigo" class="evento card p-5 m-3">
                     <h2>nome do evento - 05/03/2022</h2>
                     <h4>Arctic Monkeys, The Kooks, Hiatus Kaiyote</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
                         dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
                         nobis in inventore tenetur asperiores.</p>
-                    <a href="#" class="btn btn-primary">reservar ingresso</a>
+                    <input type="button" id="abrirmodal" class="btn btn-primary" value="reservar ingresso" onclick=abrirmodal()>
                 </article>
-                <article class="evento card p-5 m-3">
+                <article id="artigo" class="evento card p-5 m-3">
                     <h2>nome do evento - 05/03/2022</h2>
                     <h4>Arctic Monkeys, The Kooks, Hiatus Kaiyote</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
                         dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
                         nobis in inventore tenetur asperiores.</p>
-                    <a href="#" class="btn btn-primary">reservar ingresso</a>
+                    <input type="button" id="abrirmodal" class="btn btn-primary" value="reservar ingresso" onclick=abrirmodal()>
                 </article>
-                <article class="evento card p-5 m-3">
+                <article id="artigo" class="evento card p-5 m-3">
                     <h2>nome do evento - 05/03/2022</h2>
                     <h4>Arctic Monkeys, The Kooks, Hiatus Kaiyote</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
                         dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
                         nobis in inventore tenetur asperiores.</p>
-                    <a href="#" class="btn btn-primary">reservar ingresso</a>
+                    <input type="button" id="abrirmodal" class="btn btn-primary" value="reservar ingresso" onclick=abrirmodal()>
                 </article>
-                <article class="evento card p-5 m-3">
+                <article id="artigo" class="evento card p-5 m-3">
                     <h2>nome do evento - 05/03/2022</h2>
                     <h4>Arctic Monkeys, The Kooks, Hiatus Kaiyote</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
                         dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
                         nobis in inventore tenetur asperiores.</p>
-                    <a href="#" class="btn btn-primary">reservar ingresso</a>
+                    <input type="button" id="abrirmodal" class="btn btn-primary" value="reservar ingresso" onclick=abrirmodal()>
                 </article>
-                <article class="evento card p-5 m-3">
+                <article id="artigo" class="evento card p-5 m-3">
                     <h2>nome do evento - 05/03/2022</h2>
                     <h4>Arctic Monkeys, The Kooks, Hiatus Kaiyote</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aperiam sunt quo similique,
                         dolorum consectetur inventore ipsam, officiis neque natus eius harum alias quidem. Possimus
                         nobis in inventore tenetur asperiores.</p>
-                    <a href="#" class="btn btn-primary">reservar ingresso</a>
+                    <input type="button" id="abrirmodal" class="btn btn-primary" value="reservar ingresso" onclick=abrirmodal()>
                 </article>
             </div>
         </section>
@@ -122,5 +122,14 @@
         </div>
     </footer>
 </body>
-
+    <script href="/js/eventos.js"></script>
+    <section class="modal">
+        <h1>Cadastre-se</h1>
+        <input class="nome" type="text" placeholder="Digite seu Nome">
+        <br><br>
+        <input class="email" type="text" placeholder="Digite seu E-mail">
+        <br><br>
+        <input class="btn btn-dark" type="button" value="Enviar" onclick=enviamodal()>
+        <input class="btn btn-danger" type="button" value="Fechar" onclick=fechamodal()>
+    </section>
 </html>
